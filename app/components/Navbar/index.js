@@ -151,6 +151,18 @@ const Navbar = () => {
           </NavLink>
           <NavLink
             className={`px-3 border-r h-7 border-slate-500 flex justify-center items-center ${
+              location.pathname === '/net-exposure' ||
+              location.pathname === '/myaccount/account_statement' ||
+              location.pathname === '/myaccount/activity_log'
+                ? 'text-[#f98903]'
+                : ''
+            }`}
+            to={'/net-exposure'}
+          >
+            <span className="hover:underline">Risk Management</span>
+          </NavLink>
+          <NavLink
+            className={`px-3 border-r h-7 border-slate-500 flex justify-center items-center ${
               location.pathname === '/myaccount' ||
               location.pathname === '/myaccount/account_statement' ||
               location.pathname === '/myaccount/activity_log'

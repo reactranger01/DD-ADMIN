@@ -77,6 +77,16 @@ import {
   TransferList,
 } from './containers/pageListAsync';
 import AccountStatementUser from './containers/MyAccountUser/AccountStatementUser';
+import NetExposure from './containers/RiskManagement/NetExposure';
+import NetExposureUserBet from './containers/RiskManagement/NetExposureUserBet';
+import NetExposureView from './containers/RiskManagement/NetExposureView';
+import SessionNetExposureView from './containers/RiskManagement/SessionNetExposureView';
+import NetExposureViewUser from './containers/RiskManagement/UserNetExposuseTbales/NetExposureViewUser';
+import NetExposureUserPoints from './containers/RiskManagement/NetExposureUserPoints';
+import SessionNetExposureUserPoints from './containers/RiskManagement/SessionNetExposureUserPoints';
+import WorkStation from './containers/RiskManagement/WorkStation';
+import SessionWorkStation from './containers/RiskManagement/SessionWorkStation';
+import SessionNetExposureViewUser from './containers/RiskManagement/UserNetExposuseTbales/SessionNetExposureViewUser';
 
 function App() {
   return (
@@ -118,6 +128,37 @@ function App() {
               <Route path="master_data/:id/:path" element={<MasterData />} />
               <Route path="transfer_list" element={<TransferList />} />
             </Route>
+            <Route path="/net-exposure" element={<NetExposure />} />
+            <Route
+              path="/net_exposure-user-bets/:userId"
+              element={<NetExposureUserBet />}
+            />
+            <Route path="/net_exposure_View" element={<NetExposureView />} />
+            <Route
+              path="/session_net_exposure_View"
+              element={<SessionNetExposureView />}
+            />
+            <Route
+              path="/net_exposure_View_user"
+              element={<NetExposureViewUser />}
+            />
+            <Route
+              path="/session_net_exposure_View_user"
+              element={<SessionNetExposureViewUser />}
+            />
+            <Route
+              path="/net_exposure_userpoints"
+              element={<NetExposureUserPoints />}
+            />
+            <Route
+              path="/session_net_exposure_userpoints"
+              element={<SessionNetExposureUserPoints />}
+            />
+            <Route path="/workstation" element={<WorkStation />} />
+            <Route
+              path="/session_workstation"
+              element={<SessionWorkStation />}
+            />
             <Route path="report" element={<Reports />}>
               <Route path="event_profit" element={<EventProfitlist />} />
               <Route

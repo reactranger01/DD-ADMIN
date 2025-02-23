@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
-import { DataGrid, GridToolbar } from '@mui/x-data-grid';
+import { DataGrid } from '@mui/x-data-grid';
 import { LinearProgress } from '@mui/material';
 import CustomNoRowsOverlay from '@/utils/styles';
 import { useParams } from 'react-router-dom';
@@ -256,7 +256,7 @@ function BetHistoryMasterNew() {
             </button>
           </div>
         </div>
-        <div className="mx-8 mt-4 border border-gray-500 rounded-md h-full ">
+        <div className="md:mx-8 mx-2 mt-4 border border-gray-500 rounded-md h-full ">
           <div className="h-8 bg-[#071535] rounded-t-md text-sm font-semibold">
             <h3 className="p-1">Bet History</h3>
           </div>
@@ -284,7 +284,7 @@ function BetHistoryMasterNew() {
                 paginationMode="server"
                 onPaginationModelChange={setPaginationModel}
                 slots={{
-                  toolbar: GridToolbar,
+                  // toolbar: GridToolbar,
                   loadingOverlay: LinearProgress,
                   noRowsOverlay: CustomNoRowsOverlay,
                 }}

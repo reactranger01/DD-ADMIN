@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { CiSearch } from 'react-icons/ci';
 import { v4 as uuidv4 } from 'uuid';
-import { DataGrid, GridToolbar } from '@mui/x-data-grid';
+import { DataGrid } from '@mui/x-data-grid';
 import { LinearProgress } from '@mui/material';
 import CustomNoRowsOverlay from '@/utils/styles';
 // import BetConfigModal from './Modal/BetConfigModal';
@@ -434,7 +434,7 @@ const Events = () => {
         </div>
       </div>
       <div>
-        <div className="search-box  h-10 mx-2 md:mx-2 md:mx-10 my-4 flex justify-end">
+        <div className="search-box  h-10 mx-2  md:mx-10 my-4 flex justify-end">
           <div className="relative w-[250px] md:w-[350px] mb-5 ">
             <input
               type="text"
@@ -451,7 +451,7 @@ const Events = () => {
             </span>
           </div>
         </div>
-        <div className="h-10 mx-2 md:mx-2 md:mx-10 my-4 flex justify-end">
+        <div className="h-10 mx-2  md:mx-10 my-4 flex justify-end">
           <button
             className=" w-36 h-10 rounded-md p-1 bg-[#071535] text-white hover:bg-[#040b1d]"
             disabled={isLoading}
@@ -491,7 +491,7 @@ const Events = () => {
               paginationModel={paginationModel}
               onPaginationModelChange={setPaginationModel}
               slots={{
-                toolbar: GridToolbar,
+                // toolbar: GridToolbar,
                 loadingOverlay: LinearProgress,
                 noRowsOverlay: CustomNoRowsOverlay,
               }}

@@ -120,7 +120,7 @@ function List() {
           </div>
         </div>
       </div>
-      <div className="md:mx-2 md:mx-10 bg-slate-50  mx-2 text-xs font-semibold  text-bold-500 border border-slate-300 rounded-sm lg:flex md:grid-cols-1 md:grid-flow-row h-full   ">
+      <div className=" md:mx-10 bg-slate-50  mx-2 text-xs font-semibold  text-bold-500 border border-slate-300 rounded-sm lg:flex md:grid-cols-1 md:grid-flow-row h-full   ">
         <div className="  mx-4 my-2 h-11 lg:border-r lg:w-48 md:w-full md:border-b lg:border-b-0">
           <h4 className="  mr-4 text-[#9b9b9b]">Net Exposure</h4>
           <span className=" text-sm text-[#243a48]">

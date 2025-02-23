@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
 import { IconButton } from '@mui/material';
-import { DataGrid, GridToolbar } from '@mui/x-data-grid';
+import { DataGrid } from '@mui/x-data-grid';
 import { LinearProgress, Tooltip } from '@mui/material';
 import CustomNoRowsOverlay from '@/utils/styles';
 import { MdDelete } from 'react-icons/md';
@@ -483,7 +483,7 @@ function MasterList() {
   return (
     <>
       {isLoading && <Loading />}
-      <div className="mx-2 md:mx-2 md:mx-10 my-4  bg-white  border-gray-500 rounded-sm h-full border-solid borderflex  text-sm text-slate-950 ">
+      <div className="mx-2  md:mx-10 my-4  bg-white  border-gray-500 rounded-sm h-full border-solid borderflex  text-sm text-slate-950 ">
         <div className="grid grid-cols-2 gap-4 text-slate-950 text-sm mb-2">
           {/* <div className="ml-10">
             Show
@@ -525,7 +525,7 @@ function MasterList() {
               paginationMode="server"
               onPaginationModelChange={setPaginationModel}
               slots={{
-                toolbar: GridToolbar,
+                // toolbar: GridToolbar,
                 loadingOverlay: LinearProgress,
                 noRowsOverlay: CustomNoRowsOverlay,
               }}

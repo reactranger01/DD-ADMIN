@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-import { DataGrid, GridToolbar } from '@mui/x-data-grid';
+import { DataGrid } from '@mui/x-data-grid';
 import { LinearProgress } from '@mui/material';
 import CustomNoRowsOverlay from '@/utils/styles';
 import { Link, useParams } from 'react-router-dom';
@@ -296,7 +296,7 @@ function ProfitLossUserAviator() {
                 paginationMode="server"
                 onPaginationModelChange={setPaginationModel}
                 slots={{
-                  toolbar: GridToolbar,
+                  // toolbar: GridToolbar,
                   loadingOverlay: LinearProgress,
                   noRowsOverlay: CustomNoRowsOverlay,
                 }}

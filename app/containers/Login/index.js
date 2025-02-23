@@ -86,7 +86,7 @@ const Login = () => {
           <div className="w-[233px] h-[100px] mb-[15px]">
             <img
               className="w-full h-full object-contain"
-              src="/images/bigdaddy.png"
+              src="/images/yoloLogo.webp"
             />
           </div>
           <div className="w-[233px] h-[35px] flex justify-between items-center relative ">

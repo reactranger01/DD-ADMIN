@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useCallback, useEffect, useState } from 'react';
-import { DataGrid, GridToolbar } from '@mui/x-data-grid';
+import { DataGrid } from '@mui/x-data-grid';
 import { LinearProgress, Tooltip } from '@mui/material';
 import { IconButton } from '@mui/material';
 import { MdDelete } from 'react-icons/md';
@@ -510,22 +510,8 @@ function UserList() {
   return (
     <>
       {isLoading && <Loading />}
-      <div className="md:mx-2 md:mx-10 mx-2 my-4 bg-white  border-gray-500 rounded-sm h-full border-solid borderflex  text-sm text-slate-950">
-        <div className="grid grid-cols-2 gap-4 text-slate-950 text-sm mb-2">
-          {/* <div className="ml-10">
-            Show
-            <select className="border border-gray-300 rounded-sm shadow-sm mt-4 h-7  mx-1">
-              <option value="10">10</option>
-              <option value="25">25</option>
-              <option value="100">100</option>
-            </select>
-            entries
-          </div> */}
-          {/* <div className=" flex flex-row-reverse">
-            <input className="border border-slate-300 rounded-md mx-4 p-1 my-4" />
-            <h4 className="my-4  text-slate-950">Search : </h4>
-          </div> */}
-        </div>
+      <div className=" md:mx-10 mx-2 my-4 bg-white  border-gray-500 rounded-sm h-full border-solid borderflex  text-sm text-slate-950">
+        <div className="grid grid-cols-2 gap-4 text-slate-950 text-sm mb-2"></div>
         <div className="card mx-4">
           <div className="w-auto h-full custom-table">
             <DataGrid
@@ -549,7 +535,7 @@ function UserList() {
               paginationMode="server"
               onPaginationModelChange={setPaginationModel}
               slots={{
-                toolbar: GridToolbar,
+                // // toolbar: GridToolbar,
                 loadingOverlay: LinearProgress,
                 noRowsOverlay: CustomNoRowsOverlay,
               }}

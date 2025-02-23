@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
-import { DataGrid, GridToolbar } from '@mui/x-data-grid';
+import { DataGrid } from '@mui/x-data-grid';
 import { LinearProgress } from '@mui/material';
 import CustomNoRowsOverlay from '@/utils/styles';
 import { Link, useParams } from 'react-router-dom';
@@ -357,7 +357,7 @@ function ProfitLoseMarket() {
                   paginationMode="server"
                   onPaginationModelChange={setPaginationModel}
                   slots={{
-                    toolbar: GridToolbar,
+                    // toolbar: GridToolbar,
                     loadingOverlay: LinearProgress,
                     noRowsOverlay: CustomNoRowsOverlay,
                   }}
@@ -390,7 +390,7 @@ function ProfitLoseMarket() {
                   paginationMode="server"
                   onPaginationModelChange={setPaginationModel}
                   slots={{
-                    toolbar: GridToolbar,
+                    // toolbar: GridToolbar,
                     loadingOverlay: LinearProgress,
                     noRowsOverlay: CustomNoRowsOverlay,
                   }}

@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useCallback, useEffect, useState } from 'react';
-import { DataGrid, GridToolbar } from '@mui/x-data-grid';
+import { DataGrid } from '@mui/x-data-grid';
 import { LinearProgress } from '@mui/material';
 import CustomNoRowsOverlay from '@/utils/styles';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
@@ -379,7 +379,7 @@ function DownlineProfitListreport() {
           <button className="p-1 font-semibold">Reset</button>
         </div> */}
         </div>
-        <div className="mx-8 mt-4 border border-gray-500 rounded-md h-full ">
+        <div className="md:mx-8 mx-2 mt-4 border border-gray-500 rounded-md h-full ">
           <div className="h-8 bg-[#071535] rounded-t-md text-sm font-semibold">
             <h3 className="p-1 px-2">Profit Loss</h3>
           </div>
@@ -423,7 +423,7 @@ function DownlineProfitListreport() {
                   paginationMode="server"
                   onPaginationModelChange={setPaginationModel}
                   slots={{
-                    toolbar: GridToolbar,
+                    // toolbar: GridToolbar,
                     loadingOverlay: LinearProgress,
                     noRowsOverlay: CustomNoRowsOverlay,
                   }}
@@ -456,7 +456,7 @@ function DownlineProfitListreport() {
                   paginationMode="server"
                   onPaginationModelChange={setPaginationModel}
                   slots={{
-                    toolbar: GridToolbar,
+                    // toolbar: GridToolbar,
                     loadingOverlay: LinearProgress,
                     noRowsOverlay: CustomNoRowsOverlay,
                   }}

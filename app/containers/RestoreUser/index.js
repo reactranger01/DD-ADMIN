@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useCallback, useEffect, useState } from 'react';
-import { DataGrid, GridToolbar } from '@mui/x-data-grid';
+import { DataGrid } from '@mui/x-data-grid';
 import { LinearProgress, Tooltip } from '@mui/material';
 import CustomNoRowsOverlay from '@/utils/styles';
 import { getAuthData, isLoggedIn, putAuthData } from '@/utils/apiHandlers';
@@ -182,7 +182,7 @@ function RestoreUser() {
               paginationMode="server"
               onPaginationModelChange={setPaginationModel}
               slots={{
-                toolbar: GridToolbar,
+                // toolbar: GridToolbar,
                 loadingOverlay: LinearProgress,
                 noRowsOverlay: CustomNoRowsOverlay,
               }}

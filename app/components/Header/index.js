@@ -8,7 +8,6 @@ import { TbReload } from 'react-icons/tb';
 import { useDispatch } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-// import Logo from '../../../public/bigdaddy.png';
 const Header = () => {
   const dispatch = useDispatch();
   const [userInfo, setUserInfo] = useState({});
@@ -63,10 +62,10 @@ const Header = () => {
         <Link to={'/'} className="w-32 h-20 ml-5">
           <img
             className="w-full h-full object-contain"
-            src="/images/bigdaddy.png"
+            src="/images/yoloLogo.webp"
           />
         </Link>
-        <div className="flex items-center  md:mx-2 md:mx-10 text-white">
+        <div className="flex items-center  mx-2 md:mx-10 text-white">
           <p className="text-sm font-bold bg-[#332e2e] px-[4px] py-[2px] mr-2 rounded hidden md:block">
             {userInfo?.userType + ' - ' + userInfo?.username}
           </p>

@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useCallback, useEffect, useState } from 'react';
-import { DataGrid, GridToolbar } from '@mui/x-data-grid';
+import { DataGrid } from '@mui/x-data-grid';
 import { LinearProgress, Tooltip } from '@mui/material';
 import CustomNoRowsOverlay from '@/utils/styles';
 import { Link, useParams } from 'react-router-dom';
@@ -376,7 +376,7 @@ function MasterData() {
   let sx = { border: 'solid-gray' };
   return (
     <>
-      <div className="mx-2 md:mx-2 md:mx-10 my-4  bg-white  border-gray-500 rounded-sm h-full border-solid borderflex  text-sm text-slate-950 ">
+      <div className="mx-2  md:mx-10 my-4  bg-white  border-gray-500 rounded-sm h-full border-solid borderflex  text-sm text-slate-950 ">
         <div className="grid grid-cols-2 gap-4 text-slate-950 text-sm ">
           {/* <div className="ml-4">
           Show
@@ -418,7 +418,7 @@ function MasterData() {
               paginationMode="server"
               onPaginationModelChange={setPaginationModel}
               slots={{
-                toolbar: GridToolbar,
+                // toolbar: GridToolbar,
                 loadingOverlay: LinearProgress,
                 noRowsOverlay: CustomNoRowsOverlay,
               }}

@@ -447,7 +447,7 @@ function TransferList() {
   //   setIsOpenLogs(true);
   // };
   return (
-    <div className="w-full text-black mx-2 md:mx-2 md:mx-10 my-4 bg-white py-2 max-w-[96vw]">
+    <div className="w-full text-black mx-2  md:mx-10 my-4 bg-white py-2 max-w-[96vw]">
       {isLoading && <Loading />}
 
       <div className="flex justify-between items-center p-2 pb-0">
@@ -484,7 +484,7 @@ function TransferList() {
             paginationMode="server"
             onPaginationModelChange={setPaginationModel}
             slots={{
-              // toolbar: GridToolbar,
+              // // toolbar: GridToolbar,
               loadingOverlay: LinearProgress,
               noRowsOverlay: CustomNoRowsOverlay,
             }}

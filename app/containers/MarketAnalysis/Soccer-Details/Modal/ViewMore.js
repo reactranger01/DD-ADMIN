@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { RxCross2 } from 'react-icons/rx';
 import PropTypes from 'prop-types';
-import { DataGrid, GridToolbar } from '@mui/x-data-grid';
+import { DataGrid } from '@mui/x-data-grid';
 import ParentList from './ParentList';
 import { LinearProgress } from '@mui/material';
 import CustomNoRowsOverlay from '@/utils/styles';
@@ -214,7 +214,7 @@ const ViewMore = ({ isopenViewMore, handlecloseuserBooklist }) => {
                 paginationMode="server"
                 onPaginationModelChange={setPaginationModel}
                 slots={{
-                  toolbar: GridToolbar,
+                  // toolbar: GridToolbar,
                   loadingOverlay: LinearProgress,
                   noRowsOverlay: CustomNoRowsOverlay,
                 }}

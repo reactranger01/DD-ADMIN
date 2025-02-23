@@ -5,7 +5,7 @@ import {
   // postAuthData,
   putAuthData,
 } from '@/utils/apiHandlers';
-import { DataGrid, GridToolbar } from '@mui/x-data-grid';
+import { DataGrid } from '@mui/x-data-grid';
 import { LinearProgress } from '@mui/material';
 import CustomNoRowsOverlay from '@/utils/styles';
 import React, { useCallback, useEffect, useState } from 'react';
@@ -335,7 +335,7 @@ const Deposit = () => {
 
   return (
     <>
-      <div className="search-box  h-10 mx-2 md:mx-2 md:mx-10 my-4 flex justify-end">
+      <div className="search-box  h-10 mx-2  md:mx-10 my-4 flex justify-end">
         <div className="relative w-[250px] md:w-[350px] mb-5 ">
           <input
             type="text"
@@ -395,7 +395,7 @@ const Deposit = () => {
               paginationMode="server"
               onPaginationModelChange={setPaginationModel}
               slots={{
-                toolbar: GridToolbar,
+                // toolbar: GridToolbar,
                 loadingOverlay: LinearProgress,
                 noRowsOverlay: CustomNoRowsOverlay,
               }}
